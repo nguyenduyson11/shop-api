@@ -6,7 +6,7 @@ const port = process.env.PORT;
 
 app.use(cors());
 
-app.get('/users', (req, res) => {
+app.get('api/users', (req, res) => {
   res.status(200).json({
     status: true,
     data: [
